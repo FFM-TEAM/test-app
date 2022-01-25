@@ -359,6 +359,7 @@ letter-spacing: 0.01em;
 
 color: #F4F5F6;
 
+
 `;
 
 function Join({ children, ...props } : Props) {
