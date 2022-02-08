@@ -8,34 +8,26 @@ interface Props {
     children: React.ReactNode;
 }
 
-const JoinBox = styled.div`
-    /* 회원가입 */
+const ResetBox = styled.div`
+    /* 비밀번호 재설정 */
 
 
     position: absolute;
-    width: 600px;
-    height: 500px;
-    left: 367px;
-    top: 140px;
-
-    // width: 439px;
-    // height: 355px;
-    // left: 421px;
-    // top: 140px;
-
+    width: 438px;
+    height: 193px;
+    left: 421px;
+    top: 224px;
 `;
 
 const PrimeText = styled.div`
 /* Prime_text_1 */
 
 
-// position: absolute;
-left: 43.7%;
-right: 37.47%;
-
-
 position: absolute;
-//left: 164px;
+left: 118PX;
+//right: 42.03%;
+//top: 224px;
+bottom: 146px;
 
 font-family: SpoqaHanSans;
 font-style: normal;
@@ -51,28 +43,35 @@ color: #F4F5F6;
 
 `;
 
+const TextA = styled.div`
+position: absolute;
+width: 433px;
+height: 30px;
+left: 15px;
+top: 67px;
+
+/* 03 Heading 3 */
+
+font-family: SpoqaHanSans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+
+/* Onbg dark */
+
+color: #F4F5F6;
+
+`;
+
 const EditTextA = styled.div`
 position: absolute;
 width: 438px;
 height: 66px;
-left: 87px;
-top: 100px;
-
-`;
-const EditTextB = styled.div`
-position: absolute;
-width: 438px;
-height: 66px;
-left: 87px;
-top: 180px;
-
-`;
-const EditTextC = styled.div`
-position: absolute;
-width: 438px;
-height: 66px;
-left: 87px;
-top: 260px;
+//left: 10px;
+top: 120px;
 
 `;
 const EditLabel = styled.label`
@@ -133,38 +132,10 @@ box-sizing: border-box;
 border-radius: 4px;
 `;
 
-const CheckBoxB = styled.div`
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 87px;
-    top: 337px;
-`;
-
-const CheckTextB = styled.label`
-    position: absolute;
-    width: 408px;
-    height: 20px;
-    top: 342px;
-    left: 117px;
-
-    font-family: SpoqaHanSans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    /* identical to box height, or 133% */
-
-    letter-spacing: -0.02em;
-
-    /* Onbg dark */
-    color: #F4F5F6;
-`;
-
 const Button = styled.div`
     position: absolute;
-    left: 573px;
-    right: 38%;
+    left: 537px;
+    right: 541px;
     top: 535px;
     bottom: 137px;
 
@@ -175,7 +146,7 @@ const Button = styled.div`
 `;
 
 const ButtonText = styled.label`
-/* 이메일 인증 */
+/* 이메일 발송 */
 
 
 position: absolute;
@@ -203,42 +174,23 @@ color: #F4F5F6;
 
 `;
 
-//${Label}
-
-const Input = styled.input`
-//   &:checked +  {
-//     background: blue;
-//   }
-background: #6C99F2;
-border-radius: 3px;
-`;
-
 function Join({ children, ...props } : Props) {
     return (
         <Layout>{children}
             <HeaderTemplate>
             </HeaderTemplate>
-            <JoinBox>
-                <PrimeText>회원가입</PrimeText>
+
+            <ResetBox>
+                <PrimeText>비밀번호 재설정</PrimeText>
+                <TextA>임시 비밀번호를 받으실 이메일 주소를 입력해주세요.</TextA>
                 <EditTextA>
                     <EditLabel>이메일</EditLabel>
                     <EditInput placeholder={"이메일을 입력해주세요."}></EditInput>
                 </EditTextA>
-                <EditTextB>
-                    <EditLabel>비밀번호</EditLabel>
-                    <EditInput placeholder={"비밀번호를 입력해주세요."}></EditInput>
-                </EditTextB>
-                <EditTextC>
-                    <EditLabel>비밀번호 확인</EditLabel>
-                    <EditInput placeholder={"비밀번호를 다시 입력해주세요."}></EditInput>
-                </EditTextC>
-
-                <CheckBoxB><Input id="input" type="checkbox" /></CheckBoxB>
-                <CheckTextB>프라임 이용 약관 및 개인정보취급방침 에 모두 동의합니다.</CheckTextB>
-            </JoinBox>
+            </ResetBox>
 
             <Button>
-                <ButtonText>이메일 인증</ButtonText>
+                <ButtonText>이메일 발송</ButtonText>
             </Button>
         </Layout>
     );
