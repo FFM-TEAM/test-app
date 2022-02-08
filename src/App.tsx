@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Layout from "./components/common/Layout";
 import Join from "./components/Join";
+import ResetPwd from "./components/ResetPwd";
 
 function App() {
   // return <PageTemplate>
@@ -17,7 +18,7 @@ function App() {
     <Routes>
       <Route path="/" element={<PageTemplate>Test</PageTemplate>}></Route>
       <Route path="/join" element={<Join>Test2</Join>}></Route>
-      <Route path="/3"element={<PageTemplate>Test3</PageTemplate>} ></Route>
+      <Route path="/resetPwd"element={<ResetPwd>Test3</ResetPwd>} ></Route>
     </Routes>
   )
 }
