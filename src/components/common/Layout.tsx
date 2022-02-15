@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import LogoSrc from '../img/GettyImages.jpg';
+// background-image: url(${LogoSrc});
 
 interface Props {
     //children: React.ReactNode;
@@ -12,7 +14,7 @@ const Conatiner = styled.div`
     height: 720px;
 
     /* Bg dark */
-    background: #1B1E25;
+    background: #1B1E25; 
 `;
 
 function Layout({ children } : Props) {

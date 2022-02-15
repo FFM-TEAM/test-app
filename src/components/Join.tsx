@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Layout from './common/Layout';
 import HeaderTemplate from './HeaderTemplate';
 
+
 interface Props {
     //children: React.ReactNode;
     children: React.ReactNode;

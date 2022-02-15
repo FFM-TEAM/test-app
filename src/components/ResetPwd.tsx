@@ -174,7 +174,7 @@ color: #F4F5F6;
 
 `;
 
-function Join({ children, ...props } : Props) {
+function ResetPwd({ children, ...props } : Props) {
     return (
         <Layout>{children}
             <HeaderTemplate>
@@ -196,4 +196,4 @@ function Join({ children, ...props } : Props) {
     );
 }
 
-export default Join;
+export default ResetPwd;
