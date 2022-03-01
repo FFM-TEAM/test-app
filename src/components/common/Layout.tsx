@@ -1,21 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
+import LogoSrc from '../img/GettyImages.jpg';
+// background-image: url(${LogoSrc});
 
 interface Props {
     //children: React.ReactNode;
     children: React.ReactNode;
 }
 const Conatiner = styled.div`
-    /* Signup-dark */
-    position: absolute;
-    width: 1280px;
-    height: 720px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 
     /* Bg dark */
-    background: #1B1E25;
+    background: #1B1E25; 
 `;
 
-function Layout({ children } : Props) {
+function Layout({ children }: Props) {
     return <Conatiner>{children}</Conatiner>
 }
 
