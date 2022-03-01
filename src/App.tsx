@@ -16,9 +16,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login>Test</Login>}></Route>
-      <Route path="/join" element={<Join>Test2</Join>}></Route>
-      <Route path="/resetPwd"element={<ResetPwd>Test3</ResetPwd>} ></Route>
-      <Route path="/emailAuth"element={<EmailAuth>Test4</EmailAuth>} ></Route>
+      <Route path="/join" element={<Join />}></Route>
+      <Route path="/resetPwd" element={<ResetPwd>Test3</ResetPwd>} ></Route>
+      <Route path="/emailAuth" element={<EmailAuth>Test4</EmailAuth>} ></Route>
     </Routes>
   )
 }
